@@ -10,6 +10,7 @@ This modules modifies "many2one" form fields so as to add some new display
 control options.
 
 ** New: support many2manytags widget ! **
+** New: support odoo v8 (see odoo/8.0 branch) ! **
 
 Options provided includes possibility to remove "Create..." and/or "Create and
 Edit..." entries from many2one drop down. You can also change default number of
