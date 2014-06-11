@@ -25,7 +25,7 @@ if the current user have no permission rights to create the related object.
 Requirements
 ------------
 
-Was tested on openerp v7.0
+Was tested on openerp v7.0, odoo v8.0
 
 
 New option
