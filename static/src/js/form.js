@@ -21,7 +21,7 @@ openerp.web_m2x_options = function (instance) {
  
 	get_options: function() {
 	    var self = this;
-	    if (_.isUndefined(this.view.ir_options_loaded)) {
+	    if (!_.isUndefined(this.view) && _.isUndefined(this.view.ir_options_loaded)) {
 		this.view.ir_options_loaded = $.Deferred();
 		this.view.ir_options = {};
 		(new instance.web.Model("ir.config_parameter"))
@@ -32,8 +32,9 @@ openerp.web_m2x_options = function (instance) {
 			});
 			self.view.ir_options_loaded.resolve();
 		    });
+	        return this.view.ir_options_loaded;
 	    }
-	    return this.view.ir_options_loaded;
+	    return $.when();
 	},
 	
      show_error_displayer: function () {
