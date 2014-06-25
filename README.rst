@@ -25,7 +25,7 @@ if the current user have no permission rights to create the related object.
 Requirements
 ------------
 
-Was tested on openerp saas-3, saas-4 branch
+Was tested on openerp trunk, saas-5 branch. New way to import js file. (thanks to tfossoul)
 
 
 New option
