@@ -49,7 +49,9 @@ openerp.web_m2x_options = function (instance) {
             var self = this;
             // add options limit used to change number of selections record
             // returned.
-	    if (!_.isUndefined(this.view.ir_options['web_m2x_options.limit'])) {
+	    if (_.isUndefined(this.view))
+                return this._super.apply(this, arguments);
+            if (!_.isUndefined(this.view.ir_options['web_m2x_options.limit'])) {
 		    this.limit = parseInt(this.view.ir_options['web_m2x_options.limit']);
 	    }
 
