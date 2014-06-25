@@ -33,11 +33,9 @@ Thanks to:
 """,
     "depends": [
         'base',
-	'web',
+	    'web',
     ],
-    "js": [
-        'static/src/js/form.js',
-    ],
+    'data': ['view.xml'],
     "author": "Tuxservices",
     "installable" : True,
     "active" : False,
