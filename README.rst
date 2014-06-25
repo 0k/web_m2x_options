@@ -6,11 +6,12 @@ Add new options for many2one field
 Description
 -----------
 
-This modules modifies "many2one" form fields so as to add some new display
+This modules modifies "many2one" and "many2manytags" form fields so as to add some new display
 control options.
 
-** New: support many2manytags widget ! **
-** New: support global option management with ir.config_parameter ! **
+**New: support many2manytags widget !**
+
+**New: support global option management with ir.config_parameter !**
 
 Options provided includes possibility to remove "Create..." and/or "Create and
 Edit..." entries from many2one drop down. You can also change default number of
@@ -24,7 +25,7 @@ if the current user have no permission rights to create the related object.
 Requirements
 ------------
 
-Was tested on openerp v7.0
+Was tested on openerp saas-3, saas-4 branch
 
 
 New option
